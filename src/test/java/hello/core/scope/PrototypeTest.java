@@ -17,7 +17,7 @@ public class PrototypeTest {
         PrototypeBean bean2 = ac.getBean(PrototypeBean.class);
         System.out.println("bean1 = " + bean1);
         System.out.println("bean2 = " + bean2);
-        Assertions.assertThat(bean1).isNotSameAs(bean2);
+        assertThat(bean1).isNotSameAs(bean2);
         ac.close();
 
     }
